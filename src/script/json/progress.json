@@ -1,0 +1,44 @@
+{
+   "html-css": {
+      "percent": 90,
+      "animationDuration": 2
+   },
+   "javascript": {
+      "percent": 15,
+      "animationDuration": 2
+   },
+   "bootstrap": {
+      "percent": 80,
+      "animationDuration": 2
+   },
+   "php": {
+      "percent": 10,
+      "animationDuration": 2
+   },
+   "webdevelopment": {
+      "percent": 80,
+      "animationDuration": 2
+   },
+   "comunication": {
+      "percent": 90,
+      "animationDuration": 2
+   },
+   "teamwork": {
+      "percent": 15,
+      "animationDuration": 2
+
+   },
+   "creativite": {
+      "percent": 10,
+      "animationDuration": 2
+   },
+   "dedicacion": {
+      "percent": 80,
+      "animationDuration": 2
+   },
+   "project-managment": {
+      "percent": 90,
+      "animationDuration": 2
+
+   }
+}
