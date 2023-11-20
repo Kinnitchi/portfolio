@@ -9,7 +9,6 @@ class App {
       this.height = window.innerHeight;
       this.styles = [];
 
-
       this.run();
    }
 
@@ -39,7 +38,6 @@ class App {
    }
 
    events() {
-
       this.nav_bar.addEventListener('click', () => this.dynamic_menu());
       this.menu_bar.addEventListener('click', () => this.select_menu());
       this.theme.addEventListener('click', e => this.theme_toggler(e.target));
@@ -47,7 +45,6 @@ class App {
 
       $('a.nav-tabs').on('click', e => {
          e.preventDefault();
-
          $('html, body').animate({
             scrollTop: $($(e.target).attr('href')).offset().top,
          }, 500, 'linear');

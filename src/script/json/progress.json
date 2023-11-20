@@ -1,39 +1,38 @@
 {
    "html-css": {
-      "percent": 90,
+      "percent": 87,
       "animationDuration": 2
    },
    "javascript": {
-      "percent": 15,
+      "percent": 93,
       "animationDuration": 2
    },
    "bootstrap": {
-      "percent": 80,
+      "percent": 86,
       "animationDuration": 2
    },
    "php": {
-      "percent": 10,
+      "percent": 26,
       "animationDuration": 2
    },
    "webdevelopment": {
-      "percent": 80,
-      "animationDuration": 2
-   },
-   "comunication": {
       "percent": 90,
       "animationDuration": 2
    },
-   "teamwork": {
-      "percent": 15,
+   "comunication": {
+      "percent": 96,
       "animationDuration": 2
-
+   },
+   "teamwork": {
+      "percent": 90,
+      "animationDuration": 2
    },
    "creativite": {
-      "percent": 10,
+      "percent": 84,
       "animationDuration": 2
    },
    "dedicacion": {
-      "percent": 80,
+      "percent": 100,
       "animationDuration": 2
    },
    "project-managment": {
