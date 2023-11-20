@@ -8,6 +8,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
       integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
    <title>Portfolio</title>
    <link rel="stylesheet" href="src/css/style.css">
 </head>
@@ -36,7 +37,7 @@
       </header>
    </div>
 
-   <section id="home" class="inicio">
+   <section id="home" class="home">
       <div class="container-banner">
          <div class="container-img">
             <img src="https://avatars.githubusercontent.com/u/79287925?v=4" alt="">
@@ -44,11 +45,19 @@
          <h1>Kinnitchi</h1>
          <h2>Software Engineer at Acqio</h2>
          <div class="networks">
-            <a href="#"><i class="fa-brands fa-facebook-f" title="a"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter" title="a"></i></a>
-            <a href="#"><i class="fa-brands fa-skype" title="a"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in" title="a"></i></a>
-            <a href="#"><i class="fa-solid fa-rss" title="a"></i></a>
+            <a href="https://www.facebook.com/igor.vieira.777701" target="_blank" rel="noopener noreferrer"
+               title="facebook">
+               <i class="ri-facebook-fill"></i>
+            </a>
+            <a href="https://twitter.com/kinnitchi" target="_blank" rel="noopener noreferrer" title="facebook">
+               <i class="ri-twitter-x-fill"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/kinnitchi/" target="_blank" rel="noopener" title="linkedin">
+               <i class="ri-linkedin-fill"></i>
+            </a>
+            <a href="https://github.com/Kinnitchi" target="_blank" rel="noopener" title="github">
+               <i class="ri-github-line"></i>
+            </a>
          </div>
       </div>
    </section>
@@ -100,43 +109,44 @@
                <h3>I LOVE</h3>
                <div class="container-interests">
                   <div class="interests">
-                     <i class="fa-solid fa-gamepad"></i>
+                     <i class="ri-gamepad-fill"></i>
                      <span>Game</span>
                   </div>
                   <div class="interests">
-                     <i class="fa-solid fa-headphones"></i>
+                     <i class="ri-customer-service-fill"></i>
                      <span>Song</span>
                   </div>
                   <div class="interests">
-                     <i class="fa-solid fa-plane"></i>
+                     <i class="ri-flight-takeoff-fill"></i>
                      <span>Travel</span>
                   </div>
                   <div class="interests">
-                     <i class="fa-brands fa-apple"></i>
-                     <span>MAC OS</span>
+                     <i class="ri-youtube-fill"></i>
+                     <span>Youtube</span>
                   </div>
                   <div class="interests">
-                     <i class="fa-solid fa-person-hiking"></i>
-                     <span>Hicking</span>
+                     <i class="ri-twitch-fill"></i>
+                     <span>Twitch</span>
                   </div>
                   <div class="interests">
-                     <i class="fa-solid fa-book"></i>
-                     <span>Books</span>
+                     <i class="ri-graduation-cap-fill"></i>
+                     <span>studying</span>
                   </div>
                   <div class="interests">
-                     <i class="fa-solid fa-car"></i>
+                     <i class="ri-car-fill"></i>
                      <span>Autos</span>
                   </div>
                   <div class="interests">
-                     <i class="fa-solid fa-camera"></i>
+                     <i class="ri-camera-fill"></i>
                      <span>Photography</span>
                   </div>
 
                </div>
             </div>
          </div>
-         <button type="button">
-            Download CV <i class="fa-solid fa-download"></i>
+         <button type="button" id="download_cv">
+            Download CV
+            <i class="ri-download-2-fill"></i>
             <span class="overlay"></span>
          </button>
       </div>
@@ -248,34 +258,12 @@
             <div class="column left">
                <h3>Education</h3>
                <div class="item item-left">
-                  <h4>Lorem ipsum</h4>
-                  <span class="case">Lorem ipsum</span>
-                  <span class="close">2005 - 2008</span>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae
-                     aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae
-                     fugiat deserunt! Explicabo, veritatis?</p>
-                  <div class="conector">
-                     <div class="circle"></div>
-                  </div>
-               </div>
-               <div class="item item-left">
-                  <h4>Lorem ipsum</h4>
-                  <span class="case">Lorem ipsum</span>
-                  <span class="close">2005 - 2008</span>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae
-                     aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae
-                     fugiat deserunt! Explicabo, veritatis?</p>
-                  <div class="conector">
-                     <div class="circle"></div>
-                  </div>
-               </div>
-               <div class="item item-left">
-                  <h4>Lorem ipsum</h4>
-                  <span class="case">Lorem ipsum</span>
-                  <span class="close">2005 - 2008</span>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae
-                     aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae
-                     fugiat deserunt! Explicabo, veritatis?</p>
+                  <h4>UNINOVE</h4>
+                  <span class="case">Analise e Desenvolvimento de Sistemas</span>
+                  <span class="close">2021 - 2023</span>
+                  <p>
+
+                  </p>
                   <div class="conector">
                      <div class="circle"></div>
                   </div>
@@ -283,36 +271,61 @@
             </div>
 
             <div class="column right">
-               <h3>Experience </h3>
+               <h3>Experience</h3>
+
                <div class="item item-right">
-                  <h4>Front Developer</h4>
-                  <span class="case">Lorem ipsum</span>
-                  <span class="close">2005 - 2008</span>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae
-                     aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae
-                     fugiat deserunt! Explicabo, veritatis?</p>
+                  <h4>Estagio</h4>
+                  <span class="case">Iv2</span>
+                  <span class="close">2021 - 2021</span>
+                  <p>
+                     Suporte/Desenvolvimento na plataforma Fluig TOTVS<br>
+                     Desenvolvimento de Workflows (BPM)<br>
+                     Desenvolvimento Widgets (WCM)<br>
+                     Integração e consumo de APIs, Datasets e Webservices<br>
+                     Definição e implementação de layouts
+                  </p>
+                  <div class="conectord">
+                     <div class="circulod"></div>
+                  </div>
+               </div>
+               <div class="item item-right">
+                  <h4>Estagio</h4>
+                  <span class="case">Fundação Vanzolini</span>
+                  <span class="close">2022 - 2022</span>
+                  <p>
+                     Desenvolvimento na plataforma Wordpress<br>
+                     Definição e implementação de layouts
+                  </p>
                   <div class="conectord">
                      <div class="circulod"></div>
                   </div>
                </div>
                <div class="item item-right">
                   <h4>Front Developer</h4>
-                  <span class="case">Lorem ipsum</span>
-                  <span class="close">2005 - 2008</span>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae
-                     aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae
-                     fugiat deserunt! Explicabo, veritatis?</p>
+                  <span class="case">2Be Consulting</span>
+                  <span class="close">2022 - 2023</span>
+                  <p>
+                     Suporte/Desenvolvimento na plataforma Fluig TOTVS<br>
+                     Desenvolvimento de Workflows (BPM)<br>
+                     Desenvolvimento Widgets (WCM)<br>
+                     Integração e consumo de APIs, Datasets e Webservices<br>
+                     Definição e implementação de layouts
+                  </p>
                   <div class="conectord">
                      <div class="circulod"></div>
                   </div>
                </div>
                <div class="item item-right">
-                  <h4>Front Developer</h4>
-                  <span class="case">Lorem ipsum</span>
-                  <span class="close">2005 - 2008</span>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae
-                     aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae
-                     fugiat deserunt! Explicabo, veritatis?</p>
+                  <h4>Software Engineer</h4>
+                  <span class="case">Acqio</span>
+                  <span class="close">2023 - 2023</span>
+                  <p>
+                     Suporte/Desemvolvimento na plataforma Fluig TOTVS<br>
+                     Desenvolvimento de Workflows (BPM)<br>
+                     Desenvolvimento Widgets (WCM)<br>
+                     Integração e consumo de APIs, Datasets e Webservices<br>
+                     Definição e implementação de layouts
+                  </p>
                   <div class="conectord">
                      <div class="circulod"></div>
                   </div>
@@ -384,7 +397,7 @@
                <input type="text" placeholder="Subject">
                <input type="text" placeholder="Price">
                <textarea name="" id="" columns="30" rows="10" placeholder="Massage"></textarea>
-               <button> send <i class="fa-solid fa-paper-plane"></i>
+               <button> send <i class="ri-send-plane-fill"></i>
                   <span class="overlay"></span>
                </button>
             </div>
@@ -410,19 +423,41 @@
             </div>
          </div>
       </div>
+
+
+      <button onclick="abrirModal()">Abrir Modal
+         <span class="overlay"></span>
+      </button>
+
+      <div id="meuModal" class="modal">
+         <div class="modal-conteudo">
+            <span class="fechar" onclick="fecharModal()">&times;</span>
+            <p>Conteúdo do modal aqui.</p>
+         </div>
+
+      </div>
+
    </section>
 
    <!-- footer -->
    <footer>
-      <a href="#home" class="top nav-tabs" title="a">
-         <i class="fa-solid fa-angles-up"></i>
+      <a href="#home" class="top" title="scroll to top">
+         <i class="ri-arrow-up-double-fill"></i>
       </a>
       <div class="networks">
-         <a href="#"><i class="fa-brands fa-facebook-f" title="a"></i></a>
-         <a href="#"><i class="fa-brands fa-twitter" title="a"></i></a>
-         <a href="#"><i class="fa-brands fa-skype" title="a"></i></a>
-         <a href="#"><i class="fa-brands fa-linkedin-in" title="a"></i></a>
-         <a href="#"><i class="fa-solid fa-rss" title="a"></i></a>
+         <a href="https://www.facebook.com/igor.vieira.777701" target="_blank" rel="noopener noreferrer"
+            title="facebook">
+            <i class="ri-facebook-fill"></i>
+         </a>
+         <a href="https://twitter.com/kinnitchi" target="_blank" rel="noopener noreferrer" title="facebook">
+            <i class="ri-twitter-x-fill"></i>
+         </a>
+         <a href="https://www.linkedin.com/in/kinnitchi/" target="_blank" rel="noopener" title="linkedin">
+            <i class="ri-linkedin-fill"></i>
+         </a>
+         <a href="https://github.com/Kinnitchi" target="_blank" rel="noopener" title="github">
+            <i class="ri-github-line"></i>
+         </a>
       </div>
       <p>
          © 2023
@@ -433,7 +468,7 @@
       <p>Política de Privacidade | Termos de Serviço</p>
    </footer>
 
-
+   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
       integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
       crossorigin="anonymous" referrerpolicy="no-referrer"></script>

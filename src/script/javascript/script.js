@@ -8,6 +8,7 @@ class App {
       this.skills = document.getElementById("skills");
       this.height = window.innerHeight;
       this.styles = [];
+      this.download = document.querySelector('#download_cv');
 
       this.run();
    }
@@ -23,14 +24,11 @@ class App {
          this.menu_control = false;
       } else {
          document.getElementById("nav").classList = "responsive";
-
          this.menu_control = true;
       }
    }
 
    select_menu(e) {
-      console.log(e);
-      debugger
       e.classList = "";
       this.menu_control = false;
    }
@@ -47,6 +45,7 @@ class App {
       });
       this.theme.addEventListener('click', e => this.theme_toggler(e.target));
       window.addEventListener('scroll', () => this.bars());
+      this.download.addEventListener('click', () => window.open('src/docs/Curriculum.pdf', '_blank'));
 
       $('a.nav-tabs').on('click', e => {
          e.preventDefault();
@@ -93,4 +92,22 @@ class App {
          this.styles.length = 0;
       }
    }
+
 }
+
+
+function abrirModal() {
+   document.getElementById('meuModal').style.display = 'block';
+}
+
+function fecharModal() {
+   document.getElementById('meuModal').style.display = 'none';
+}
+
+// Fechar o modal se o usuário clicar fora dele
+window.onclick = function (event) {
+   const modal = document.getElementById('meuModal');
+   if (event.target === modal) {
+      fecharModal();
+   }
+};
