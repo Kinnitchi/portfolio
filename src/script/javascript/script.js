@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => new App());
 class App {
    constructor() {
       this.menu_control = false;
-      this.nav_bar = document.querySelector(".nav-tabs");
+      this.nav_bar = document.querySelectorAll(".nav-tabs");
       this.menu_bar = document.querySelector(".menu-bars");
       this.theme = document.querySelector("#theme-toggler");
       this.skills = document.getElementById("skills");
@@ -23,12 +23,15 @@ class App {
          this.menu_control = false;
       } else {
          document.getElementById("nav").classList = "responsive";
+
          this.menu_control = true;
       }
    }
 
-   select_menu() {
-      document.getElementById("nav").classList = "";
+   select_menu(e) {
+      console.log(e);
+      debugger
+      e.classList = "";
       this.menu_control = false;
    }
 
@@ -38,8 +41,10 @@ class App {
    }
 
    events() {
-      this.nav_bar.addEventListener('click', () => this.dynamic_menu());
-      this.menu_bar.addEventListener('click', () => this.select_menu());
+      this.menu_bar.addEventListener('click', () => this.dynamic_menu());
+      this.nav_bar.forEach(navTab => {
+         navTab.addEventListener('click', e => this.select_menu(e.target));
+      });
       this.theme.addEventListener('click', e => this.theme_toggler(e.target));
       window.addEventListener('scroll', () => this.bars());
 
@@ -49,14 +54,11 @@ class App {
             scrollTop: $($(e.target).attr('href')).offset().top,
          }, 500, 'linear');
       });
-
    }
 
    bars() {
       const distancia_skills = this.height - this.skills.getBoundingClientRect().top;
-      console.log(distancia_skills);
       if (distancia_skills >= 300 && distancia_skills <= 1400) {
-
          fetch('src/script/json/progress.json')
             .then(response => response.json())
             .then(data => {
