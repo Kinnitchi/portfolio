@@ -449,6 +449,13 @@ a.top {
    margin-bottom: 10px;
 }
 
+.curriculum .row .item .close a {
+   display: block;
+   color: var(--main-color);
+   margin-bottom: 10px;
+   text-decoration: none;
+}
+
 .curriculum .row .item p {
    line-height: 24px;
 }
@@ -841,7 +848,7 @@ footer .top {
    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.modal-conteudo {
+.modal-content {
    background-color: #fefefe;
    margin: 15% auto;
    padding: 20px;
@@ -849,16 +856,16 @@ footer .top {
    width: 80%;
 }
 
-.fechar {
+.close-modal {
    color: #aaa;
    float: right;
    font-size: 28px;
    font-weight: bold;
 }
 
-.fechar:hover,
-.fechar:focus {
-   color: black;
+.close-modal:hover,
+.close-modal:focus {
+   color: var(--main-color);
    text-decoration: none;
    cursor: pointer;
 }

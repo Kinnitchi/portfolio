@@ -10,6 +10,10 @@ class App {
       this.styles = [];
       this.download = document.querySelector('#download_cv');
 
+      this.modal = document.querySelector('#modal');
+      this.modal_open = document.querySelectorAll('.interests');
+      this.modal_close = document.querySelector('#modal');
+
       this.run();
    }
 
@@ -53,6 +57,13 @@ class App {
             scrollTop: $($(e.target).attr('href')).offset().top,
          }, 500, 'linear');
       });
+
+
+      this.modal_open.forEach(modal => {
+         modal.addEventListener('click', e => this.modal_content(e.target));
+      });
+      this.modal_close.addEventListener('click', () => this.modal.style.display = 'none');
+      window.addEventListener('click', event => event.target === modal ? this.style.display = 'none' : null);
    }
 
    bars() {
@@ -93,21 +104,20 @@ class App {
       }
    }
 
-}
+   modal_content(e) {
+      this.modal.style.display = 'block';
+      const category = e.dataset.category;
+      switch (category) {
+         case 'twitch':
 
+            document.querySelector('#content').innerHTML = `
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/67DosyY9MtTA2TJ0jpVFKH?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            `
+            break;
 
-function abrirModal() {
-   document.getElementById('meuModal').style.display = 'block';
-}
-
-function fecharModal() {
-   document.getElementById('meuModal').style.display = 'none';
-}
-
-// Fechar o modal se o usuário clicar fora dele
-window.onclick = function (event) {
-   const modal = document.getElementById('meuModal');
-   if (event.target === modal) {
-      fecharModal();
+         default:
+            break;
+      }
    }
-};
+
+}
