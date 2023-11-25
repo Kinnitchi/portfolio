@@ -108,10 +108,9 @@ class App {
       this.modal.style.display = 'block';
       const category = e.dataset.category;
       switch (category) {
-         case 'twitch':
-
+         case 'songs':
             document.querySelector('#content').innerHTML = `
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/67DosyY9MtTA2TJ0jpVFKH?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0ZY5SHPJ84KHwAUX7BW63W?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             `
             break;
 
